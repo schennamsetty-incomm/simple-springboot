@@ -18,5 +18,10 @@ public class SpringBootTest {
     public String ping(HttpServletRequest request,HttpServletResponse response) throws Exception {
 		return "SpringBootTest ping() is up and running";
 	}
+	
+	@GetMapping(value="/check")
+    public String check(HttpServletRequest request,HttpServletResponse response) throws Exception {
+		return "SpringBootTest check is up and running";
+	}
 
 }
