@@ -47,6 +47,7 @@
 				    <version>1.3.0</version>
 				    <configuration>
 				        <subscriptionId>02ddd8d2-a28b-4191-8990-6ede78b831ca</subscriptionId>
+				        <clusterName>simplespringboot</clusterName>
 				        <appName>simple-springboot</appName>
 				        <isPublic>true</isPublic>
 				        <deployment>
