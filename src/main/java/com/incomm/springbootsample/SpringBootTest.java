@@ -16,17 +16,15 @@ public class SpringBootTest {
 	
 	private static Logger log = LogManager.getLogger(SpringBootTest.class);
 	
-	@Value("${spring.message1}")
-	private String message1;
-	
-	@Value("${spring.message2}")
-	private String message2;
-	
-	@Value("${spring.message3}")
-	private String message3;
-	
-	@Value("${spring.message4}")
-	private String message4;
+	/*
+	 * @Value("${spring.message1}") private String message1;
+	 * 
+	 * @Value("${spring.message2}") private String message2;
+	 * 
+	 * @Value("${spring.message3}") private String message3;
+	 * 
+	 * @Value("${spring.message4}") private String message4;
+	 */
 	
 	@GetMapping(value="/status")
     public String status(HttpServletRequest request,HttpServletResponse response) throws Exception {
@@ -40,10 +38,11 @@ public class SpringBootTest {
 		return "SpringBootTest ping() is up and running";
 	}
 	
-	@GetMapping(value="/check")
-    public String check(HttpServletRequest request,HttpServletResponse response) throws Exception {
-		log.info("Inside check()");
-		return message1+" "+message2+" "+message3+" "+message4;
-	}
+	/*
+	 * @GetMapping(value="/check") public String check(HttpServletRequest
+	 * request,HttpServletResponse response) throws Exception {
+	 * log.info("Inside check()"); return
+	 * message1+" "+message2+" "+message3+" "+message4; }
+	 */
 	
 }
