@@ -4,12 +4,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/services")
 public class SpringBootTest {
 	
-	@GetMapping(value="/")
+	@GetMapping(value="/status")
     public String status(HttpServletRequest request,HttpServletResponse response) throws Exception {
 		return "SpringBootTest Service is up and running";
 	}
