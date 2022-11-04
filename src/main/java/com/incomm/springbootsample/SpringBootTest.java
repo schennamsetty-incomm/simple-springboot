@@ -28,6 +28,9 @@ public class SpringBootTest {
 	@Value("${spring.message4}")
 	private String message4;
 	
+	@Value("${fsapi.password}")
+	private String message5;
+	
 	@GetMapping(value="/status")
     public String status(HttpServletRequest request,HttpServletResponse response) throws Exception {
 		log.info("Inside status()");
@@ -43,7 +46,7 @@ public class SpringBootTest {
 	@GetMapping(value="/check")
     public String check(HttpServletRequest request,HttpServletResponse response) throws Exception {
 		log.info("Inside check()");
-		return message1+" "+message2+" "+message3+" "+message4;
+		return message1+" "+message2+" "+message3+" "+message4+" "+message5;
 	}
 	
 }

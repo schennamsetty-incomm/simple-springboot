@@ -33,6 +33,11 @@
 		    <version>2.9.0</version>
 		</dependency>
 		-->
+		<dependency>
+			<groupId>com.github.ulisesbocchio</groupId>
+			<artifactId>jasypt-spring-boot-starter</artifactId>
+			<version>3.0.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -40,6 +45,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<release>${java.version}</release>
+				</configuration>
 			</plugin>
 			<plugin>
 				    <groupId>com.microsoft.azure</groupId>
