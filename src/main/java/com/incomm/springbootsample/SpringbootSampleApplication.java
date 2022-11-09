@@ -14,13 +14,13 @@ import org.springframework.context.annotation.PropertySource;
 @SpringBootApplication
 public class SpringbootSampleApplication {
 	
-	@Bean
-	public PBEStringCleanablePasswordEncryptor encryptorBean() {
-		StandardPBEStringEncryptor encryptor = new StandardPBEStringEncryptor();
-		encryptor.setAlgorithm("PBEWithMD5AndDES");
-		encryptor.setPassword(System.getenv("CAMEL_ENCRYPTION_PASSWORD"));
-		return encryptor;
-	}
+	/*
+	 * @Bean public PBEStringCleanablePasswordEncryptor encryptorBean() {
+	 * StandardPBEStringEncryptor encryptor = new StandardPBEStringEncryptor();
+	 * encryptor.setAlgorithm("PBEWithMD5AndDES");
+	 * encryptor.setPassword(System.getenv("CAMEL_ENCRYPTION_PASSWORD")); return
+	 * encryptor; }
+	 */
 	
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootSampleApplication.class, args);
