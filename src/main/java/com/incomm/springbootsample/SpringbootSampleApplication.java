@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.PropertySource;
 
 //@PropertySource({"file:/opt/incomm-simplespringboot/config/testspringboot.properties" })
-@PropertySource({"classpath:qab/testspringboot.properties" })
+//@PropertySource({"classpath:qab/testspringboot.properties" })
 //@PropertySource({"file:../../../../resources/qab/testspringboot.properties" })
 
 @SpringBootApplication
